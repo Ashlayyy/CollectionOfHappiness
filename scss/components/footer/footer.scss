@@ -1,0 +1,11 @@
+@use '../../abstracts/colors';
+@use '../../abstracts/animations';
+@use '../../abstracts/mixins';
+
+.footer {
+    @include mixins.flexCenter;
+    padding-top: 5vh;
+    font-weight: 300;
+    color: map-get(colors.$baseColors, 'black');
+    text-align: center;
+}

@@ -1,0 +1,193 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: Ubuntu, sans-serif, serif;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9B208;
+  background: linear-gradient(to left bottom, #FC5404, #F9B208);
+  animation-name: popUp;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: min-content;
+  gap: 5rem;
+}
+.header__logo {
+  padding: 2.5rem;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  color: #000;
+}
+.header__logoText {
+  font-size: 95%;
+  font-weight: 500;
+  line-height: 0.1rem;
+  color: #000;
+}
+
+.card {
+  width: 50ch;
+  padding: 1rem;
+  font-size: 70%;
+  position: relative;
+  text-align: center;
+  color: #eee;
+  animation-name: popUp;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card__image {
+  width: 50ch;
+  aspect-ratio: 19/10;
+}
+.card__date {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+}
+.card__title {
+  position: absolute;
+  bottom: 2vw;
+  left: 2vw;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  animation-name: popUp;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.detail__devider {
+  position: relative;
+  text-align: center;
+  color: #eee;
+}
+.detail__background {
+  width: 45ch;
+  aspect-ratio: 19/6;
+}
+.detail__date {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+.detail__title {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+}
+.detail__summary {
+  width: 40ch;
+  padding: 2.5rem 0;
+}
+.detail__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.detail__button {
+  border: none;
+  color: #eee;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgba(85, 85, 85, 0.6);
+  color: #eee;
+  border: 0.2rem solid #555555;
+  border-radius: 10%;
+}
+.detail__button:hover {
+  background-color: #555555;
+  color: #eee;
+}
+
+.LeftPanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.panel__devider {
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+}
+
+@media all and (max-width: 1400px) {
+  .main {
+    padding-top: 1rem;
+    flex-direction: column-reverse;
+  }
+}
+@media all and (max-width: 60rem) {
+  .LeftPanel {
+    flex-direction: column;
+  }
+  .detail__wrap {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
