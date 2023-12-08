@@ -10,3 +10,15 @@ body {
     background: linear-gradient(to left bottom, map-get(colors.$baseColors, 'mainColor'), map-get(colors.$baseColors, 'secondaryColor'));
     @include mixins.popUp;
 }
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 5rem;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
